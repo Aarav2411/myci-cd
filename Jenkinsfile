@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Aarav2411/myci-cd.git'
-            }
-        }
-
         stage('Install') {
             steps {
                 sh 'npm install'
